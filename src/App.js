@@ -1,14 +1,17 @@
 import "./App.css";
 import Header from "./components/Header";
 import Sidebar from "./components/Sidebar";
+import Feed from "./components/Feed";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
-      <Sidebar />
-      {/* Feed */}
-      {/* Widgets */}
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+        {/* Widgets */}
+      </div>
     </div>
   );
 }
